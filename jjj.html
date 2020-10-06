@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+		table{
+			border-collapse: collapse;
+		}
+		tanle,tr,td{
+			border: 1px solid black;
+		}
+		.a{
+			width: 40px;
+			height: 80px;
+		}
+		.b{
+			width: 80px;
+			height: 80px;
+		}
+		.ss{
+			width: 40px;
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td rowspan="2" class="a"></td>
+			<td  colspan="2" rowspan="2"class="b"></td>
+			<td rowspan ="2" class="a"></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td rowspan="2" class="a"></td>
+			<td colspan="2"></td>
+			<td rowspan="2" class="a"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			</tr>
+		<tr>
+			<td class="ss"></td>
+			<td colspan="2"></td>
+			<td class="ss"></td>
+		</tr>
+	</table>
+</body>
+	</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table,td{
+			border: 2px solid #000;
+		}
+		table{font-size: 50px;
+			border-collapse: collapse
+		}
+		td{text-align: center;
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td rowspan="2"></td>
+			<td rowspan="2"></td>
+			<td colspan="2"></td>
+			<tr>
+				<td colspan="2"></td>
+			</tr>
+		
+
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			<td rowspan="2"></td>
+			<td rowspan="2"></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+	</table>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+	table,td{
+		border: 1px solid #000;	
+
+	}
+	table{font-size: 30px;
+
+		border-collapse: collapse;
+
+	}
+	td{
+text-align: center;
+				width: 50px;
+		height: 50px;
+	}
+
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+		<td colspan="5"></td>
+		<td rowspan="3"></td>
+		
+		<tr>
+		</tr>
+	</tr>
+	<tr>
+		<td rowspan="6"></td>
+		<td colspan="4"></td>
+	</tr>
+
+	<tr>
+
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+	</tr>
+	</table>
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.a1 {
+		text-align:center;
+	}
+	</style>
+</head>
+<body>
+	<from>
+		<p>
+		    <label for="name">name</label>
+			<input type="text" name="name" id="name">
+		</p>
+		<p>
+			<label for="pwd">pwd</label>
+			<input type="password" name="psd" id="psd">
+		</p>
+		<p>sex
+			<input type="radio" name="sex" id="m">
+			<label for="m">male</label>
+			<input type="radio" name="sex" id="n">
+			<label for="n">female</label>
+		</p>
+		<p>age
+			<select name="age"><option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3" selected>3</option>
+			<option value="4">4</option>
+			<option value="5">5</option></select>
+		</p>
+		<p>course
+			<input type="checkbox" name="c" id="c">
+			<label for="c">chinese</label>
+			<input type="checkbox" name="c" id="m">
+			<label for="m">math</label>
+			<input type="checkbox" name="c" id="e">
+			<label for="e">english</label>
+		</p>
+		<div><p>
+			<input type="submit" value="Submit it!">
+			<input type="reset" value="Reset it!">
+		</p>
+	    </div>
+	</from>	
+</body>
+</html>
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+    span {
+        color:red;
+        font-family:"微软雅黑";
+        font-size:12px;
+    }
+    textarea {
+         resize:"none";
+    }
+    .test {
+    	width: 1600px;
+    	height: 500px;
+    }
+    .test ul {
+    	width: 800px;
+    	margin:0 auto;
+    	text-align:left;
+    }
+    .test li {
+    	list-style:none;
+    	padding: 10px;
+    }
+    </style>
+</head>
+<body>
+<form class="test">
+	<ul>
+		<li>
+			<label for="y">用户名：</label>
+		    <input type="text" name="用户名" id="y" value="请输入姓名" size="20px">
+            <span>字母数字下划线，2-10位</span>
+		</li>
+		<li>
+			<label for="m">&nbsp&nbsp&nbsp密码：</label>
+        	<input type="password" name="密码" id="m">
+            <span>字母数字下划线，6-20位</span>
+		</li>
+		<li>
+			&nbsp&nbsp&nbsp性别：
+        	<input type="radio" name="性别" id="x">
+        	<label for="x">男</label>
+        	<input type="radio" name="性别" id="n">
+        	<label for="n">女</label>
+            <span>选择其中一项</span>
+		</li>
+		<li>
+			&nbsp&nbsp&nbsp爱好：
+        	<input type="checkbox" name="ah" id="sw">
+        	<label for="sw">上网</label>
+        	<input type="checkbox" name="ah" id="lq">
+        	<label for="lq">篮球</label>
+        	<input type="checkbox" name="ah" id="zq">
+        	<label for="zq">足球</label>
+        	<input type="checkbox" name="ah" id="gj">
+        	<label for="gj">逛街</label>
+        	<input type="checkbox" name="ah" id="cg">
+        	<label for="cg">唱歌</label>
+        	<input type="checkbox" name="ah" id="tw">
+        	<label for="tw">跳舞</label>
+        	<input type="checkbox" name="ah" id="pq">
+        	<label for="pq">排球</label>
+            <span>至少选择一项</span>
+		</li>
+		<li>
+			居住地：
+        	<select name="jzd">
+        		<option value="河北">河北</option>
+        		<option value="河南">河南</option>
+        		<option value="陕西">陕西</option>
+        		<option value="广东">广东</option>
+        		<option value="山西">山西</option>
+        		<option value="青海">青海</option>
+        		<option value="西藏自治区">西藏自治区</option>
+        		<option value="内蒙古自治区">内蒙古自治区</option>
+        		<option value="港澳居民">港澳居民</option>
+        		<option value="海外居民">海外居民</option>
+                <option value="--请选择--" selected>--请选择--</option>
+        	</select>
+            <span>选择一个城市</span>
+		</li>
+		<li>
+			<label for="s">&nbsp;&nbsp;&nbsp&nbsp;TEL：</label>
+        	<input type="text" name="s" id="s">
+            <span>手机号码</span>
+		</li>
+		<li>
+			<label for="e">E-mail：</label>
+        	<input type="email" name="e" id="e">
+            <span>电子邮箱地址</span>
+		</li>
+		<li>
+			&nbsp&nbsp&nbsp备注：
+        	<textarea name="b" id="b" cols="30" rows="10"></textarea>
+        	<label for="b"></label>
+            <span>不能为空</span>
+		</li>
+		<li>  <input type="submit" value="注册">
+            <input type="reset" value="取消"></li>
+	</ul>
+</form>
+</body>
+</html>
